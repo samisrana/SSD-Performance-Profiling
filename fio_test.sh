@@ -39,3 +39,5 @@ for bs in "${block_sizes[@]}"; do
     done
   done
 done
+# Run data analysis via python script
+python3 plotfio.py
