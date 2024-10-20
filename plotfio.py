@@ -106,9 +106,11 @@ def plot_performance(metric, title, ylabel, log_scale=False):
     ax.set_ylabel(ylabel)
     if log_scale:
         ax.set_yscale('log')  # Apply log scale to Y-axis for better visualization of small values
-    ax.legend()
+
+    # Move the legend outside the plot area to avoid cutting it off
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5), fontsize='small')
     plt.xticks([4000, 16000, 32000, 128000], ['4k', '16k', '32k', '128k'], rotation=45)  # Adjust x-ticks manually for clarity
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0, 0.85, 1])  # Make space for the legend
     plt.show()
 
 # Re-run the plots
