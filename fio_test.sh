@@ -13,10 +13,10 @@ io_depths=(1 16 64 256 1024)
 rw_modes=("read" "write" "randread" "randwrite" "rw" "randrw")
 
 # Set the file size to test on (adjust accordingly, use a dedicated test partition)
-test_file="/mnt/test_partition/testfile"
+test_file="/mnt/e/testfile"
 
-# Test size
-test_size="10G"
+# Test size (adjusted for a 1GB partition)
+test_size="500M"
 
 # Loop through different block sizes
 for bs in "${block_sizes[@]}"; do
@@ -39,4 +39,3 @@ for bs in "${block_sizes[@]}"; do
     done
   done
 done
-
