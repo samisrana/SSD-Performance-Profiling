@@ -403,7 +403,7 @@ These visualizations complement the line graph by providing:
 - Identification of outliers and extreme cases
 - Clearer visualization of the relationships between operation types, block sizes, and queue depths
 
-### Read/Write Ratio Effects on Bandwidth
+### Read/Write Ratio Effects
 
 The following analysis examines bandwidth performance across different block sizes and I/O configurations:
 
