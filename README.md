@@ -313,7 +313,7 @@ The experiments revealed several key insights into SSD performance characteristi
    - Mixed read/write workloads (rw, randrw) show throughput levels between pure read and pure write operations, often closer to write performance, as indicated by their position in the middle of the graph.
 
 <p align="center">
-  <img src="images/Consolidated_latency_us_effects.png" alt="Effects of Parameters on Throughput" />
+  <img src="images/Consolidated_throughput_effects.png" alt="Effects of Parameters on Throughput" />
 </p>
 
 This comprehensive set of graphs further illustrates the effects of various parameters on SSD throughput:
